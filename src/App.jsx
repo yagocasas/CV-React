@@ -7,9 +7,10 @@ const App = () => {
   console.log("Hola desde App");
   return (
     <div className="app">
-      <h1>App works!</h1>
-      <Hero />
-      <About />
+      <nav></nav>
+      <aside></aside>
+      <main></main>
+      <footer></footer>
     </div>
   );
 }
