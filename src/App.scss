@@ -22,7 +22,18 @@
   main {
     grid-area: main;
     background-color: aquamarine;
+    overflow-y: scroll;
 
+
+      p {
+        height: 40px;
+        margin-bottom: 8px;
+        background-color: brown;
+
+        &::before {
+          content: "Under the bridge";
+        }
+      }
   }
 
   footer {

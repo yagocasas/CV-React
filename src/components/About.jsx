@@ -1,9 +1,12 @@
 import React from 'react';
 import "./About.scss"
 
-const About = () => {
+const About = ({ metadata }) => {
+  console.log(metadata);
   return (
-    <div className='About'>Antonciño</div>
+    <div className='About'>
+      <h1>About</h1>
+    </div>
   )
 }
 
