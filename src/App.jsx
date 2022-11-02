@@ -5,10 +5,10 @@ import './App.scss';
 
 const App = () => {
 console.log(CV);
+const { hero } = CV;
 
   return (
     <div className="app">
-      const { hero } = CV;
       <nav></nav>
       <aside></aside>
       <main>
