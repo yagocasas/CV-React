@@ -1,19 +1,19 @@
-import React from 'react';
-import "./About.scss"
+import React from "react";
+// import { useState } from "react";
+import "./About.scss";
 
 const About = ({ metadata }) => {
-  console.log(metadata);
-  return (
-    <div className='About'>
-      <h1>About</h1>
+  console.log('metadata', metadata);
 
-      {metadata.map(element => {
-        return (
-          <h4 key={JSON.stringify(element.info)} ></h4>
-        );
+  return (
+    <div className="about">
+      <h1>About Me!</h1>
+
+      {metadata.map((element) => {
+        return <h4 key={JSON.stringify(element.info)}>{element.info}</h4>;
       })}
     </div>
-  )
+  );
 };
 
 export default About;

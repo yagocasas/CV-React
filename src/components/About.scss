@@ -1,3 +1,16 @@
-.About {
-    background-color: forestgreen;
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+
+
+.about {
+    font-family: 'Shrikhand', cursive;
+    // background-color: yellow;
+    padding: 30px;
+
+    h1 {
+        text-align: center;
+    }
+
+    h4 {
+        font-family: 'Courier New', Courier, monospace;
+    }
 }

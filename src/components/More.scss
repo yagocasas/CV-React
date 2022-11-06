@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+
+.more {
+   
+    background-color: beige;
+    text-align: center;
+
+    h1 {
+        font-family: 'Shrikhand', cursive;
+        padding: 20px;
+        // text-align: center;
+    }
+
+    h2 {
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: bold;
+        padding: 10px;
+    }
+    h4 {
+        padding: 10px;
+    }
+    
+    p {
+        font-family: 'Courier New', Courier, monospace;
+    }
+}

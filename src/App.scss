@@ -5,8 +5,8 @@
   grid-template-areas: "nav nav"
                        "sidebar main"
                        "footer footer";
-  grid-template-columns: 220px 1fr;
-  grid-template-rows: 80px 1fr 40px;
+  grid-template-columns: 310px 1fr;
+  grid-template-rows: 80px 1fr 50px;
 
   nav {
     grid-area: nav;
@@ -15,24 +15,28 @@
 
   aside {
     grid-area: sidebar;
-    background-color: green;
+    display: flex;
+    justify-content: center;
+    // background-color: green;
 
   }
 
   main {
     grid-area: main;
-    background-color: aquamarine;
+    // background-color: rgb(205, 225, 218);
     overflow-y: scroll;
+    background-image: radial-gradient(circle at 50% -20.71%, #e3d0e6 0, #e6cfe4 6.25%, #e9cee1 12.5%, #eccede 18.75%, #eecdda 25%, #f0cdd7 31.25%, #f1cdd4 37.5%, #f2cdd0 43.75%, #f2cdcd 50%, #f2cdca 56.25%, #f1cec7 62.5%, #f0cfc4 68.75%, #efcfc2 75%, #edd0c0 81.25%, #ead1be 87.5%, #e8d2bd 93.75%, #e5d3bc 100%);
+    // background-image: url('../public/assets/actualidad_395722408_130533764_1706x960.jpg');
 
 
       p {
         height: 40px;
         margin-bottom: 8px;
-        background-color: brown;
+        // background-color: brown;
 
-        &::before {
-          content: "Under the bridge";
-        }
+        // &::before {
+        //   content: "Under the bridge";
+        // }
       }
   }
 
