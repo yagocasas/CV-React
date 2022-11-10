@@ -1,18 +1,19 @@
-import React from 'react'
-import './More.scss';
-import Habilities from './Skills/Habilities';
-import Languages from './Skills/Languages';
+import React from "react";
+import "../styles/More.scss";
+import Abilities from "./Skills/Abilities";
+import Languages from "./Skills/Languages";
 
-const More = ({habilities, languages}) => {
-  console.log(habilities, languages)
+const More = ({ abilities, languages }) => {
+  console.log(abilities, languages);
   return (
-    <div className="more">
-        <h1>More</h1>
-        <Languages languages={languages}/>
-        <Habilities habilities={habilities} />
-
+    <div className="name">
+      <h1>More</h1>
+      <div className="more">
+        <Languages languages={languages} />
+        <Abilities abilities={abilities} />
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default More
+export default More;

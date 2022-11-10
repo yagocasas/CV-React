@@ -1,16 +1,16 @@
 import React from "react";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import { useState } from "react";
-import "./About.scss";
+import "../styles/About.scss";
 
 const About = ({ metadata }) => {
-  console.log('metadata', metadata);
+  // console.log("metadata", metadata);
 
   return (
     <div className="about">
-      <h1>About Me!</h1>
-
+      <h2>About Me!</h2>
       {metadata.map((element) => {
-        return <h4 key={JSON.stringify(element.info)}>{element.info}</h4>;
+        return <p key={JSON.stringify(element.info)}>{element.info}</p>;
       })}
     </div>
   );

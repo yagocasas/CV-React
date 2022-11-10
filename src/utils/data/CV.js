@@ -4,13 +4,14 @@ export const CV = {
     lastName: "Casas Díaz",
     city: "A Coruña / Galicia",
     email: "yagocd10@hotmail.com",
-    birthDate: "07/09/1984",
+    birthDate: "07/Sept/1984",
     phone: "(+34) 639101010",
-    image: "https://i.imgur.com/ZQAkED3.png",
+    image: "../public/assets/profile.jpg",
     gitHub: "https://github.com/yagocasas",
+    linkedIn: "https://www.linkedin.com/in/yago-casas-d%C3%ADaz/",
     aboutMe: [
       {
-        info: "👶 HOLA!!! Soy un chico nacido en Ribadavia, tierra de buen vino",
+        info: "HOLA!!! Soy un chico nacido en Ribadavia, tierra de buen vino",
       },
       {
         info: " Toda mi vida ha estado dedicada al mundo del deporte, como formador y practicante, más concretamente al fútbol. Esto me ha servido para desarrollar, entre otras cosas, mi capacidad de trabajo en equipo.",
@@ -26,7 +27,7 @@ export const CV = {
   education: [
     {
       name: "Licenciatura en CC de la Act. Física y del Deporte",
-      date: "2011",
+      date: "2002/2011",
       where:
         "Universidade de Vigo, campus de CC del Deporte y la Educación de Pontevedra",
     },
@@ -132,7 +133,7 @@ export const CV = {
       splevel: "B2",
     },
   ],
-  habilities: [
+  abilities: [
     "Desarrollador Web",
     "HTML",
     "CSS",

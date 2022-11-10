@@ -1,6 +1,7 @@
 import React from "react";
-import "./Experience.scss";
-import { useState } from "react";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import "../styles/Experience.scss";
+// import { useState } from "react";
 
 const Experience = ({ experience }) => {
   // console.log('RETAIL', experience.retail);
@@ -11,43 +12,44 @@ const Experience = ({ experience }) => {
   const Sport = experience.sport;
   console.log("sports", Sport);
 
-  const [showExperience, setShowExperience] = useState(true);
+  // const [showExperience, setShowExperience] = useState(true);
 
   return (
-    <div className="name">
-      <h1>Experience</h1>
+    <div className="experience--box">
+      <h2>Experience</h2>
 
-      <button onClick={() => setShowExperience(!showExperience)}>
-        {showExperience ? "Ocultar" : "Mostrar"} Experience
-      </button>
-
-      {showExperience 
-          ? <>
+      <div className="sector">
+        <div className="retail">
+          <h3>Retail</h3>
           {Retail.map((element) => {
             return (
-              <div key={JSON.stringify(element)}>
-                <h2 className="name">{element.name}</h2>
-                <h3>{element.where}</h3>
-                <p>{element.date}</p>
-                <p>{element.description}</p>
-              </div>
-            );
-          })};
-          {Sport.map((element) => {
-            return (
-              <div key={JSON.stringify(element)}>
-                <h2 className="name">{element.name}</h2>
-                <h3>{element.where}</h3>
+              <div className="s--info" key={JSON.stringify(element)}>
+                <h4>{element.name}</h4>
+                <p>{element.where}</p>
                 <p>{element.date}</p>
                 <p>{element.description}</p>
               </div>
             );
           })}
-          </> 
-          : <div>Experience Oculta</div>
-      }
-
-     
+          ;
+        </div>
+        <div  className="sports">
+          <h3>Sports</h3>
+          {Sport.map((element) => {
+            return (
+              <div className="s--info" key={JSON.stringify(element)}>
+                <h4>{element.name}</h4>
+                <p>{element.where}</p>
+                <p>{element.date}</p>
+                <p>{element.description}</p>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+      {/* </>  */}
+      {/* : <div>Experience Oculta</div> */}
+      {/* } */}
     </div>
   );
 };
