@@ -1,28 +1,44 @@
-@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+.more--box {
+  padding: 30px;
+//   background-color: beige;
+//   height: 70vh;
 
-.more {
+  h2 {
+   
+    padding-bottom: 1em;
+   
+  }
+
+  .skills {
+    
     display: flex;
-    justify-content: space-evenly;
-    background-color: beige;
-    text-align: center;
-    padding: 10px;
+    flex-direction: row;
+    justify-content: space-around;
 
-    h1 {
-        font-family: 'Shrikhand', cursive;
-        padding: 20px;
-        // text-align: center;
+
+    h3 {
+        padding-bottom: 1em;
     }
 
-    h2 {
-        font-family: 'Courier New', Courier, monospace;
-        font-weight: bold;
-        padding: 10px;
+
+    .languages {
+      text-align: center;
+
+      h4 {
+        padding: 0.7em 0;
+      }
+
+      .language--data {
+        border-bottom: 1px dashed black;
+      }
     }
-    h4 {
-        padding: 10px;
+
+    .abilities {
+        text-align: center;
+    }
+
     }
     
-    p {
-        font-family: 'Courier New', Courier, monospace;
-    }
-}
+  }
+
+

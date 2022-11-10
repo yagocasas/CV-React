@@ -2,7 +2,7 @@
 
 .education--box {
   padding: 30px;
-  background-color: beige;
+  // background-color: beige;
   height: 70vh;
 
   h2 {
@@ -31,6 +31,7 @@
       line-height: 1.2em;
       text-align: justify;
       width: 90%;
+      font-style: italic;
     }
   }
 }

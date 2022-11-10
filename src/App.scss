@@ -1,16 +1,20 @@
-.app {
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@300;400;700;900&family=Shrikhand&display=swap');
 
+.app {
+  font-family: 'Noto Sans Mono', monospace;
   height: 100%;
   display: grid;
-  grid-template-areas: "nav nav"
-                       "sidebar main"
-                       "footer footer";
+  grid-template-areas:
+    "nav nav"
+    "sidebar main"
+    "footer footer";
   grid-template-columns: 310px 1fr;
   grid-template-rows: 90px 1fr 50px;
+  background-color: #ffffff;
+  background-image: url("https://www.transparenttextures.com/patterns/paper-fibers.png");
 
   nav {
     grid-area: nav;
-
   }
 
   aside {
@@ -18,28 +22,23 @@
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    
-
   }
 
   main {
     grid-area: main;
     margin-top: 4%;
     overflow-y: scroll;
-    
+    background-color: rgba(243, 242, 235, 0.808);
+    background-image: url("https://www.transparenttextures.com/patterns/paper-fibers.png");
 
-      p {
-        height: 40px;
-        margin-bottom: 8px;
-       
-      }
+
+    p {
+      height: 40px;
+      margin-bottom: 8px;
+    }
   }
 
   footer {
     grid-area: footer;
-    background-color: blue;
-
   }
-
 }
-

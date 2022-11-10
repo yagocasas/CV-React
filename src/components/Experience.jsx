@@ -12,11 +12,9 @@ const Experience = ({ experience }) => {
   const Sport = experience.sport;
   console.log("sports", Sport);
 
-  // const [showExperience, setShowExperience] = useState(true);
-
   return (
     <div className="experience--box">
-      <h2>Experience</h2>
+      <h2>Experiencia</h2>
 
       <div className="sector">
         <div className="retail">
@@ -31,10 +29,10 @@ const Experience = ({ experience }) => {
               </div>
             );
           })}
-          ;
+          
         </div>
         <div  className="sports">
-          <h3>Sports</h3>
+          <h3>Deporte</h3>
           {Sport.map((element) => {
             return (
               <div className="s--info" key={JSON.stringify(element)}>

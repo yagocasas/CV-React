@@ -8,7 +8,7 @@ const About = ({ metadata }) => {
 
   return (
     <div className="about">
-      <h2>About Me!</h2>
+      <h2>Sobre mí!</h2>
       {metadata.map((element) => {
         return <p key={JSON.stringify(element.info)}>{element.info}</p>;
       })}

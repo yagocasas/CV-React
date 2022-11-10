@@ -6,9 +6,9 @@ import Languages from "./Skills/Languages";
 const More = ({ abilities, languages }) => {
   console.log(abilities, languages);
   return (
-    <div className="name">
-      <h1>More</h1>
-      <div className="more">
+    <div className="more--box">
+      <h2>Más</h2>
+      <div className="skills">
         <Languages languages={languages} />
         <Abilities abilities={abilities} />
       </div>

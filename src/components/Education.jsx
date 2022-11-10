@@ -5,7 +5,7 @@ const Education = ({ education }) => {
   // console.log("edu", education);
   return (
     <div className="education--box">
-      <h2>Education</h2>
+      <h2>Educación</h2>
 
       {education.map((element) => {
         // console.log(element);

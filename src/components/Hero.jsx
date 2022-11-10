@@ -11,17 +11,11 @@ const Hero = ({ info }) => {
           {info.name} {info.lastName}
         </h1>
         <h4>{info.birthDate}</h4>
+        <h4>{info.city}</h4>
         <h4>
-          📧<a href={"mailto:" + info.email}>yagocd10@hotmail.com</a>
+          <a className="mail" href={"mailto:" + info.email}>yagocd10@hotmail.com</a>
         </h4>
-        <h4>📱{info.phone}</h4>
-        <h4>🌇{info.city}</h4>
-        <h4>
-          💾<a href={info.gitHub}>GitHub</a>
-        </h4>
-        <h4>
-          <a href={info.linkedIn}>linkedIn</a>
-        </h4>
+        <h4>{info.phone}</h4>
       </div>
     </div>
   );

@@ -10,6 +10,7 @@ import Hero from "./components/Hero";
 // import More from "./components/More";
 import Navbar from "./components/Navbar";
 import Render from "./components/render/Render";
+import Footer from "./components/Footer";
 
 // import Render from "./components/render/Render";
 
@@ -34,7 +35,9 @@ const App = () => {
           <More languages={languages} abilities={abilities} /> */}
           <Render />
         </main>
-        <footer></footer>
+        <footer>
+          <Footer />
+        </footer>
       </div>
     </MyContext.Provider>
   );

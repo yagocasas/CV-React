@@ -84,16 +84,16 @@ const Navbar = () => {
       </nav>
       <ul className="buttons--box">
         <li>
-          <button onClick={() => setData("metadata")}>AboutMe</button>
+          <button onClick={() => setData("metadata")}>Sobre mí</button>
         </li>
         <li>
-          <button onClick={() => setData("education")}>Education</button>
+          <button onClick={() => setData("education")}>Educación</button>
         </li>
         <li>
-          <button onClick={() => setData("experience")}>Experience</button>
+          <button onClick={() => setData("experience")}>Experiencia</button>
         </li>
         <li>
-          <button onClick={() => setData("more")}>More</button>
+          <button onClick={() => setData("more")}>Más</button>
         </li>
       </ul>
     </div>
