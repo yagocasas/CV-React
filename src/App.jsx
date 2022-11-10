@@ -29,10 +29,6 @@ const App = () => {
           <Hero info={hero} />
         </aside>
         <main className="contain">
-          {/* <About metadata={hero.aboutMe} />
-          <Education education={education} />
-          <Experience experience={experience} />
-          <More languages={languages} abilities={abilities} /> */}
           <Render />
         </main>
         <footer>
