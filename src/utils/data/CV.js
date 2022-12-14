@@ -11,17 +11,20 @@ export const CV = {
     linkedIn: "https://www.linkedin.com/in/yago-casas-d%C3%ADaz/",
     aboutMe: [
       {
-        info: "Soy un FULL STACK DEVELOPER en desarrollo, llegado nuevo a este maravilloso mundo, con mucha energía e ilusión por seguir aprendiendo. <br>He nacido en Ribadavia (Ourense) y toda mi vida ha estado ligada al deporte en general y, más concretamente al fútbol. Poseo la Licenciatura en Ciencias de la Actividad Física y del Deporte y he hecho el Prácticum de Docencia en el Colegio Público C.P.I. de Ribadavia impartiendo clases de Educación Física. Posteriormente he ejercido el puesto de Preparador Físico en las categorías inferiores del R.C. Celta de Vigo durante 3 años, en categorías Infantil y Cadete, siendo responsable del Grupo Especial de Coordinación y Seguridad y, más tarde, en un equipo senior, Porriño Industrial C.F. Además de esto, he trabajado durante años en el sector del Retail con diversas funciones como las de atención al cliente, gestión de equipos, de stocks, etc. y siempre en ambientes de trabajo  en equipo, algo que me ha aportado muchas cosas buenas tanto a nivel profesional como personal: compromiso, respeto, educación, esfuerzo, dedicación… Después de esto, mi foco está puesto al 100% en convertirme en un desarrollador eficiente, pulcro y resolutivo con cualquier reto que se me presente. Sin más, les invito a leer mi currículum, esperando poder concertar una entrevista y, al menos, conocernos.",
+        info: "Soy un FULL STACK DEVELOPER en desarrollo, llegado nuevo a este maravilloso mundo, con mucha energía e ilusión por seguir aprendiendo.",
       },
-      // {
-      //   info: " Toda mi vida ha estado dedicada al mundo del deporte, como formador y practicante, más concretamente al fútbol. Esto me ha servido para desarrollar, entre otras cosas, mi capacidad de trabajo en equipo.",
-      // },
-      // {
-      //   info: "Además de esto, he ido compaginando mis diferentes etapas en la vida con mis funciones en el sector del Retail, mayoritariamente Retail Deportivo también.",
-      // },
-      // {
-      //   info: "Entre mis mayores hobbies están disfrutar de la música, conocer y practicar nuevos deportes y aprender de nuestro retoño de 18 meses",
-      // },
+      {
+        info: "He nacido en Ribadavia (Ourense) y toda mi vida ha estado ligada al deporte en general y, más concretamente al fútbol. Poseo la Licenciatura en Ciencias de la Actividad Física y del Deporte y he hecho el Prácticum de Docencia en el Colegio Público C.P.I. de Ribadavia impartiendo clases de Educación Física. ",
+      },
+      {
+        info: "Posteriormente he ejercido el puesto de Preparador Físico en las categorías inferiores del R.C. Celta de Vigo durante 3 años, en categorías Infantil y Cadete, siendo responsable del Grupo Especial de Coordinación y Seguridad y, más tarde, en un equipo senior, Porriño Industrial C.F.",
+      },
+      {
+        info: " Además de esto, he trabajado durante años en el sector del Retail con diversas funciones como las de atención al cliente, gestión de equipos, de stocks, etc. y siempre en ambientes de trabajo  en equipo, algo que me ha aportado muchas cosas buenas tanto a nivel profesional como personal: compromiso, respeto, educación, esfuerzo, dedicación… ",
+      },
+      {
+        info: "Después de esto, mi foco está puesto al 100% en convertirme en un desarrollador eficiente, pulcro y resolutivo con cualquier reto que se me presente. Sin más, les invito a leer mi currículum, esperando poder concertar una entrevista y, al menos, conocernos."
+      },
     ],
   },
   education: [

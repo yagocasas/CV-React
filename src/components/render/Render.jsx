@@ -7,6 +7,7 @@ import Education from '../Education'
 import Experience from '../Experience'
 import More from '../More'
 import { CV } from '../../utils/data/CV'
+import './Render.scss'
 const { hero, education, experience, languages, abilities } = CV;
 
 const Render = () => {
