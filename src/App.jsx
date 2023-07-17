@@ -5,7 +5,7 @@ import Hero from "./components/Hero";
 import Navbar from "./components/Header/Navbar";
 import Render from "./components/render/Render";
 import Footer from "./components/Footer";
-import { Container, Flex, Stack } from "@chakra-ui/react";
+import { Container, Flex } from "@chakra-ui/react";
 
 const { hero } = CV;
 
