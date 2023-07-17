@@ -1,6 +1,7 @@
 import React from "react";
+import ElementContainer from "./ElementContainer";
+import { Flex, Heading, Stack, Text } from "@chakra-ui/react";
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import "../styles/Experience.scss";
 // import { useState } from "react";
 
 const Experience = ({ experience }) => {
@@ -13,42 +14,41 @@ const Experience = ({ experience }) => {
   console.log("sports", Sport);
 
   return (
-    <div className="experience--box">
-      <h2>Experiencia</h2>
-
-      <div className="sector">
-        <div className="retail">
-          <h3>Retail</h3>
+    <ElementContainer>
+      <Heading mb={8}>Experiencia</Heading>
+      <div>
+        <div>
+          <Heading fontSize={"4xl"}>Retail</Heading>
           {Retail.map((element) => {
             return (
-              <div className="s--info" key={JSON.stringify(element)}>
-                <h4>{element.name}</h4>
-                <p>{element.where}</p>
-                <p>{element.date}</p>
-                <p>{element.description}</p>
-              </div>
+              <Flex direction={"column"} p={4} key={JSON.stringify(element)}>
+                <Stack>
+                  <Heading fontSize={"3xl"}>{element.name}</Heading>
+                  <Text>{element.where}</Text>
+                  <Text>{element.date}</Text>
+                  <Text>{element.description}</Text>
+                </Stack>
+              </Flex>
             );
           })}
-          
         </div>
-        <div  className="sports">
-          <h3>Deporte</h3>
+        <div>
+          <Heading fontSize={"4xl"}>Deporte</Heading>
           {Sport.map((element) => {
             return (
-              <div className="s--info" key={JSON.stringify(element)}>
-                <h4>{element.name}</h4>
-                <p>{element.where}</p>
-                <p>{element.date}</p>
-                <p>{element.description}</p>
-              </div>
+              <Flex direction={"column"} p={4} key={JSON.stringify(element)}>
+                <Stack>
+                  <Heading fontSize={"3xl"}>{element.name}</Heading>
+                  <Text>{element.where}</Text>
+                  <Text>{element.date}</Text>
+                  <Text>{element.description}</Text>
+                </Stack>
+              </Flex>
             );
           })}
         </div>
       </div>
-      {/* </>  */}
-      {/* : <div>Experience Oculta</div> */}
-      {/* } */}
-    </div>
+    </ElementContainer>
   );
 };
 

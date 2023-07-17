@@ -1,18 +1,16 @@
 import React from "react";
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import { useState } from "react";
-import "../styles/About.scss";
+import ElementContainer from "./ElementContainer";
+import { Heading, Text } from "@chakra-ui/react";
 
 const About = ({ metadata }) => {
-  // console.log("metadata", metadata);
 
   return (
-    <div className="about">
-      <h2>Sobre mí!</h2>
+    <ElementContainer>
+      <Heading mb={8}>Sobre mí!</Heading>
       {metadata.map((element) => {
-        return <p key={JSON.stringify(element.info)}>{element.info}</p>;
+        return <Text fontWeight={'semibold'} key={JSON.stringify(element.info)}>{element.info}</Text>;
       })}
-    </div>
+    </ElementContainer>
   );
 };
 

@@ -1,0 +1,33 @@
+@keyframes openclose {
+    0% {
+      width: 0;
+    }
+    25% {
+      width: 0;
+    }
+    50% {
+      width: 100%;
+    }
+    55% {
+      width: 100%;
+    }
+    60% {
+      width: 100%;
+    }
+    65% {
+      width: 100%;
+    }
+    70% {
+      width: 100%;
+    }
+    75% {
+      width: 100%;
+    }
+    100% {
+      width: 0;
+    }
+  }
+
+.name-animation {
+  animation: openclose 15s ease-in-out infinite;
+}

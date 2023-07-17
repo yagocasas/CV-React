@@ -1,21 +1,22 @@
 import React from 'react'
+import ElementContainer from '../ElementContainer';
+import { Flex, Heading, Text } from '@chakra-ui/react';
 
 const Languages = ({languages}) => {
     console.log(languages);
   return (
-    <div className='languages'>
-        <h3>Idiomas</h3>
-
+    <ElementContainer>
+        <Heading mb={8}>Idiomas</Heading>
     {languages.map((language) => {
         return (
-            <div className="language--data" key={JSON.stringify(language)}>
-                <h4>{language.language}</h4>
-                <p>{language.wrlevel}</p>
-                <p>{language.splevel}</p>
-            </div>
+            <Flex direction={'column'} key={JSON.stringify(language)}>
+                <Heading fontSize={'xl'} mb={4}>{language.language}</Heading>
+                <Text><strong>Escrito: </strong>{language.wrlevel}</Text>
+                <Text><strong>Hablado: </strong>{language.splevel}</Text>
+            </Flex>
         )
     })}
-    </div>
+    </ElementContainer>
   )
 };
 

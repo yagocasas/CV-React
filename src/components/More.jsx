@@ -1,18 +1,19 @@
 import React from "react";
-import "../styles/More.scss";
 import Abilities from "./Skills/Abilities";
 import Languages from "./Skills/Languages";
+import ElementContainer from "./ElementContainer";
+import { Flex, Heading } from "@chakra-ui/react";
 
 const More = ({ abilities, languages }) => {
   console.log(abilities, languages);
   return (
-    <div className="more--box">
-      <h2>Más</h2>
-      <div className="skills">
+    <ElementContainer minW={'full'} justify={'space-between'} alignSelf={'start'}>
+      <Heading mb={8}>Más Info</Heading>
+      <Flex justify={'space-between'}>
         <Languages languages={languages} />
         <Abilities abilities={abilities} />
-      </div>
-    </div>
+      </Flex>
+    </ElementContainer>
   );
 };
 

@@ -5,8 +5,8 @@ export const CV = {
     city: "A Coruña / Galicia",
     email: "yagocd10@hotmail.com",
     // birthDate: "07/Sept/1984",
-    phone: "(+34) 639101010",
-    image: "../public/assets/profile.jpg",
+    phone: "(+34) 639036998",
+    image: "https://res.cloudinary.com/dimawigei/image/upload/v1689454218/Portfolio/IMG-20210506-WA0006_iu06sb.jpg",
     gitHub: "https://github.com/yagocasas",
     linkedIn: "https://www.linkedin.com/in/yago-casas-d%C3%ADaz/",
     aboutMe: [

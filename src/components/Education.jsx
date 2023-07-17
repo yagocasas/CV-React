@@ -1,23 +1,23 @@
 import React from "react";
-import "../styles/Education.scss";
+import ElementContainer from "./ElementContainer";
+import { Flex, Heading, Text } from "@chakra-ui/react";
 
 const Education = ({ education }) => {
   // console.log("edu", education);
   return (
-    <div className="education--box">
-      <h2>Educación</h2>
-
+    <ElementContainer>
+      <Heading mb={8}>Educación</Heading>
       {education.map((element) => {
         // console.log(element);
         return (
-          <div className="education--data" key={JSON.stringify(element)}>
-            <h3>{element.name}</h3>
-            <p>{element.date}</p>
-            <p>{element.where}</p>
-          </div>
+          <Flex direction={"column"} p={4} key={JSON.stringify(element)}>
+          <Heading fontSize={'xl'}>{element.name}</Heading>
+            <Text>{element.date}</Text>
+            <Text>{element.where}</Text>
+          </Flex>
         );
       })}
-    </div>
+    </ElementContainer>
   );
 };
 

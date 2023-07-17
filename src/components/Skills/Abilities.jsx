@@ -1,16 +1,18 @@
 import React from 'react'
+import ElementContainer from '../ElementContainer';
+import { Heading, Text } from '@chakra-ui/react';
 
 const Abilities = ({abilities}) => {
   console.log(abilities);
   return (
-    <div className='abilities'>
-        <h3>Habilidades</h3>
+    <ElementContainer>
+        <Heading mb={8}>Habilidades</Heading>
         {abilities.map((ability) => {
           return (
-            <p key={ability}>{ability}</p>
+            <Text fontWeight={'semibold'} key={ability}>{ability}</Text>
             )
         })}
-        </div>
+        </ElementContainer>
   );
 };
 
