@@ -26,7 +26,6 @@ const App = () => {
                 >
                     <Flex
                         direction={{ base: "column", lg: "row" }}
-                        spacing={{ base: 4, lg: 8 }}
                         flex={1}
                         justifyContent={"space-between"}
                     >

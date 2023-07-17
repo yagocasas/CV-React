@@ -49,7 +49,7 @@ const Hero = ({ info }) => {
         p={{ base: 2, lg: 8 }}
         bg={"transparent"}
       >
-        <Heading>Full Stack Developer</Heading>
+        <Heading fontSize={'xl'}>Full Stack Developer</Heading>
         <Heading fontSize={"xl"} fontWeight={"semibold"}>
           {info.city}
         </Heading>
