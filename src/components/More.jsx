@@ -4,9 +4,7 @@ import Languages from "./Skills/Languages";
 import ElementContainer from "./ElementContainer";
 import { Flex, Heading } from "@chakra-ui/react";
 
-const More = ({ abilities, languages }) => {
-  console.log(abilities, languages);
-  return (
+const More = ({ abilities, languages }) => (
     <ElementContainer minW={'full'} justify={'space-between'} alignSelf={'start'}>
       <Heading mb={8}>Más Info</Heading>
       <Flex justify={'space-between'}>
@@ -15,6 +13,5 @@ const More = ({ abilities, languages }) => {
       </Flex>
     </ElementContainer>
   );
-};
 
 export default More;

@@ -1,9 +1,9 @@
 import React from "react";
-import { useColorMode, IconButton, Tooltip, Switch } from "@chakra-ui/react";
+import { useColorMode, IconButton, Tooltip } from "@chakra-ui/react";
 import useColor from "../hooks/useColor.hook";
 
 const ColorModeSwitcher = (props) => {
-  const { toggleColorMode, colorMode } = useColorMode();
+  const { toggleColorMode } = useColorMode();
   const { darkLightText, SwitchIcon } = useColor();
 
   return (
