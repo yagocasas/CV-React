@@ -14,7 +14,7 @@ const Render = () => {
     const { data } = useContext(MyContext)
   
     return (
-    <ElementContainer area={'main'} role='main' w={'full'} justifyContent={'start'} maxH={'80vh'} overflowY={'auto'}>
+    <ElementContainer area={'main'} role='main' w={'full'} justifyContent={'start'} maxH={'80vh'} overflowY={'auto'} p={8}>
         {/* {data === 'info' && <Hero info={hero}/>} */}
         {data === 'metadata' && <About metadata={hero.aboutMe}/>}
         {data === 'education' && <Education education={education} />}

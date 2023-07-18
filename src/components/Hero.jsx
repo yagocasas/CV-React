@@ -18,10 +18,10 @@ const Hero = ({ info }) => {
       alignItems={"center"}
       justify={"start"}
       minH={{ base: 'fit-content', lg: "75vh"}}
-      minW={"lg"}
-      p={8}
+      minW={{ base: 'xs', lg: 'md' }}
+      p={{ base: 0, lg: 8 }}
       gap={{ base: 2, lg: 4 }}
-      borderRight={{ base: "", lg: "2px solid gray" }}
+      borderRight={{ base: "none", lg: "2px solid gray" }}
     >
       <Box display={"flex"} paddingBlock={"5px"} justifyContent={"center"}>
         <Box

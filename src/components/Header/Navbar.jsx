@@ -10,22 +10,24 @@ import useColor from "../../hooks/useColor.hook";
 const Navbar = () => {
   const { setData } = useContext(MyContext);
   const { links } = NavbarLinks;
-  const { blackWhite } = useColor();
+  const { blackWhite, gradientWhiteBlack } = useColor();
   return (
     <Flex
       as={"nav"}
       justify={"space-between"}
       align={"center"}
-      w={"full"}
+      minW={'8xl'}
       py={6}
-      px={12}
+      ax={12}
       borderBottom={"2px solid gray"}
+      borderLeft={'1px solid gray'}
+      borderRight={'1px solid gray'}
       mb={8}
       position={"fixed"}
       zIndex={99}
-      bg={"bg-canvas"}
+      bg={gradientWhiteBlack}
     >
-      <Box w={"full"} display={"flex"} justifyContent={"space-around"} px={8}>
+      <Box minW={"full"} display={"flex"} justifyContent={"space-around"} px={8}>
         {links.map((link) => {
           return (
             <Button
@@ -46,8 +48,6 @@ const Navbar = () => {
             </Button>
           );
         })}
-      </Box>
-      <Box mr={4}>
           <ColorModeSwitcher color={"!bg-canvas"} />
       </Box>
     </Flex>
