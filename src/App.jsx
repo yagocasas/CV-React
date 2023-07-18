@@ -14,13 +14,24 @@ const App = () => {
 
     return (
         <MyContext.Provider value={{ data, setData }}>
-            <Flex direction={"column"} flex={1} minH={"100vh"}>
+            <Flex
+                direction={"column"}
+                flex={1}
+                minH={"100vh"}
+                maxW={{ base: 'fit-content', lg: '8xl' }}
+                minw={'fit-content'}
+                justify={'space-between'}
+                align={'center'}
+                mx={'auto'}
+                borderLeft={'1px solid gray'}
+                borderRight={'1px solid gray'}
+            >
                 <Navbar />
                 <Container
-                    pt={24}
+                    pt={{ base: 16, lg: 24 }}
                     pb={2}
                     flex={1}
-                    minW={"full"}
+                    maxW={"8xl"}
                     display={"flex"}
                     justify={"center"}
                 >
@@ -28,6 +39,7 @@ const App = () => {
                         direction={{ base: "column", lg: "row" }}
                         flex={1}
                         justifyContent={"space-between"}
+                        w={"full"}
                     >
                         <Hero info={hero} />
                         <Render />

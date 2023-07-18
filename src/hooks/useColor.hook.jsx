@@ -24,6 +24,13 @@ const useColor = () => {
   const priceOnSaleColor = useMemo(() => setColor('gray.400', 'gray.700'), [colorMode]);
   const darkLightText = useMemo(() => setColor('oscuro', 'claro'), [colorMode]);
   const SwitchIcon = useMemo(() => setColor(FaMoon, FaSun), [colorMode]);
+  const gradientWhiteBlack = useMemo(
+    () => setColor(
+      'linear-gradient(to right,#ffffff, #e9e4f0, #ffffff)',
+      'linear-gradient(to right, #000000, #232526, #000000)',
+    ),
+    [colorMode],
+  );
 
 
   return {
@@ -45,6 +52,7 @@ const useColor = () => {
     adminContainer,
     reverseAdminContainer,
     blackOrange,
+    gradientWhiteBlack,
   };
 };
 
